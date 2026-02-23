@@ -32,69 +32,73 @@
     <main>
       <section>
         <h1>LPC Teile-Shop</h1>
-        <div>
+        <div id="products">
           <div>
             <h3>Sport-Luftfilter</h3>
             <p>Mehr Luft. Mehr Leistung.</p>
             <span>50€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="1">In den Warenkorb</button>
           </div>
           <div>
             <h3>Sportauspuff</h3>
             <p>Mehr Luft. Der Sound den du verdienst</p>
             <span>300€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="2">In den Warenkorb</button>
           </div>
           <div>
             <h3>Chiptuning-Kit</h3>
             <p>Mehr PS auf Knopfdruck.</p>
             <span>200€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="3">In den Warenkorb</button>
           </div>
           <div>
             <h3>Bodykit</h3>
             <p>Dein Auto, dein Statement.</p>
             <span>600€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="4">In den Warenkorb</button>
           </div>
           <div>
             <h3>Carbon-Heckspoiler</h3>
             <p>Aero trifft Style.</p>
             <span>190€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="5">In den Warenkorb</button>
           </div>
           <div>
             <h3>Folie (pro Meter)</h3>
             <p>Farbe wechseln, Charakter behalten.</p>
             <span>30€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="6">In den Warenkorb</button>
           </div>
           <div>
             <h3>Sport-Federn</h3>
             <p>Tiefer. Schärfer. Besser.</p>
             <span>150€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="7">In den Warenkorb</button>
           </div>
           <div>
             <h3>Alufelgen (Satz)</h3>
             <p>Dreh dich um die richtige Achse.</p>
             <span>800€</span>
-            <button>In den Warenkorb</button>
+            <button data-id="8">In den Warenkorb</button>
             <div>
               <h3>Sport-Lenkrad</h3>
               <p>Grip wo es drauf ankommt.</p>
               <span>130€</span>
-              <button>In den Warenkorb</button>
+              <button data-id="9">In den Warenkorb</button>
             </div>
             <div>
               <h3>Schalensitz</h3>
               <p>Sitz fest. Fahr hart.</p>
               <span>350€</span>
-              <button>In den Warenkorb</button>
+              <button data-id="10">In den Warenkorb</button>
             </div>
           </div>
-        </div>
-      </section>
+          <div id="cart">
+            <h2>Warenkorb</h2>
+            <ul id="cart-items"></ul>
+            <p>Gesamt: <strong id="total">0.00</strong> €</p>
+          </div>
+     </section>
     </main>
     <footer></footer>
   </body>
