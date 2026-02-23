@@ -36,66 +36,116 @@
           <div>
             <h3>Chiptuning</h3>
             <p>Mehr Power. Weniger Verbrauch.</p>
-            <span>ab 300€</span>
+            <span>300€</span>
+            <button data-id="1">Auswählen</button>
           </div>
           <div>
             <h3>Sportauspuff-Montage</h3>
             <p>Klang der Begeistert.</p>
-            <span>ab 200€</span>
+            <span>200€</span>
+            <button data-id="2">Auswählen</button>
           </div>
           <div>
             <h3>Luftfilter-Upgrade</h3>
             <p>Atme tief. Fahr schnell.</p>
-            <span>ab 80€</span>
-          </div>
-          <div>
-            <h3>Komplett-Umbau</h3>
-            <p>Deine Vision. Unser Handwerk</p>
-            <span>auf Anfrage</span>
+            <span>80€</span>
+            <button data-id="3">Auswählen</button>
           </div>
           <div>
             <h3>Motortuning</h3>
             <p>Präzision bis ins letzte Detail.</p>
-            <span>ab 500€</span>
+            <span>500€</span>
+            <button data-id="4">Auswählen</button>
           </div>
           <div>
             <h3>Fahrwerk-Setup</h3>
             <p>Tiefer. Straffer. Schärfer.</p>
-            <span>ab 350€</span>
+            <span>350€</span>
+            <button data-id="5">Auswählen</button>
           </div>
           <div>
             <h3>Vollfolierung</h3>
             <p>Neues Auto, gleicher Motor.</p>
-            <span>ab 1000€</span>
+            <span>1000€</span>
+            <button data-id="6">Auswählen</button>
           </div>
           <div>
             <h3>Teilfolierung</h3>
             <p>Akzente die auffallen.</p>
-            <span>ab 300€</span>
+            <span>300€</span>
+            <button data-id="7">Auswählen</button>
           </div>
           <div>
             <h3>Bodykit-Montage</h3>
             <p>Form trifft Funktion.</p>
-            <span>ab 400€</span>
+            <span>400€</span>
+            <button data-id="8">Auswählen</button>
           </div>
           <div>
             <h3>Innenreinigung</h3>
             <p>Sauber wie am ersten Tag.</p>
-            <span>ab 100€</span>
+            <span>100€</span>
+            <button data-id="9">Auswählen</button>
           </div>
           <div>
             <h3>Politur & Versiegelung</h3>
             <p>Glanz der bleibt.</p>
-            <span>ab 150€</span>
+            <span>150€</span>
+            <button data-id="10">Auswählen</button>
           </div>
           <div>
             <h3>Keramikbeschichtung</h3>
             <p>Schutz für Jahre.</p>
-            <span>ab 400€</span>
+            <span>400€</span>
+            <button data-id="11">Auswählen</button>
           </div>
+        </div>
+        <div id="service-summary">
+          <h2>Deine Auswahl</h2>
+          <ul id="selected-services"></ul>
+          <p>Gesamt: <strong id="service-total">0.00</strong> €</p>
+          <h2>Termin buchen</h2>
+          <input type="text" id="name" placeholder="Vor- und Nachname" />
+          <input type="email" id="mail" placeholder="E-Mail" />
+          <input type="tel" id="phone" placeholder="Telefonnummer" />
+          <input type="text" id="plate" placeholder="Kennzeichen" />
+          <input
+            type="text"
+            id="vehicle"
+            placeholder="Fahrzeugmarke und Modell"
+          />
+          <input type="date" id="date" placeholder="Wunschtermin" />
+          <button id="submit">Termin anfragen</button>
+        </div>
+        <div id="confirmation" class="hidden">
+          <h2>Terminanfrage erfolgreich</h2>
+          <p>Vielen Dank! Wir melden uns so schnell wie möglich bei dir.</p>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <h3 class="uppercase">Los Pistones Customs</h3>
+        <p>Performance. Precision. Passion.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#about">Über Uns</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <div>
+          <input id="newsletter-input" placeholder="E-Mail" />
+          <button id="newsletter-btn">Go</button>
+        </div>
+        <p>Kein Spam. Nur Drops, heiße Schlitten & Deals.</p>
+      </div>
+      <div>© LOS PISTONES CUSTOMS</div>
+    </footer>
   </body>
 </html>
