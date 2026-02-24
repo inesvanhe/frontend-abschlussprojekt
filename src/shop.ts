@@ -5,6 +5,9 @@ filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const category = btn.getAttribute("data-category");
 
+    filterButtons.forEach((b) => b.classList.remove("active-filter"));
+    btn.classList.add("active-filter");
+
     cards.forEach((card) => {
       if (
         category === "All" ||

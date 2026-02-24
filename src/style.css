@@ -28,3 +28,9 @@
   padding-right: 1rem;
   height: 3rem;
 }
+
+.active-filter {
+  background-color: #30d6bb;
+  color: white;
+  border-color: #2bb69e;
+}
