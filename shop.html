@@ -18,7 +18,7 @@
         </div>
         <div>
           <nav
-            class="text-xl text-black flex justify-center gap-14 py-4 border-b border-black/10 bg-white sticky"
+            class="text-black flex justify-center gap-14 py-4 border-b border-black/10 bg-white sticky"
           >
             <a href="/index.html">Startseite</a>
             <a href="/services.html">Services & Preise</a>
@@ -30,111 +30,252 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>LPC Teile-Shop</h1>
+      <section class="max-w-6xl mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold text-center">Teile-Shop</h1>
+        <div class="mx-auto mt-3 h-1 w-24 bg-[#30d6bb] rounded"></div>
+        <p class="text-center text-gray-600 mt-6">
+          Entdecke die LPC-Ersatzteile in Aktion.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+          <div class="video">
+            <video
+              class="produktvideo w-full h-auto rounded-lg shadow-lg"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+            >
+              <source src="/public/video/delorean4.mp4" type="video/mp4" />
+              Dein Browser unterstützt das Video-Element leider nicht.
+            </video>
+          </div>
+          <div>
+            <video
+              class="produktvideo w-full h-auto rounded-lg shadow-lg"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+            >
+              <source src="/public/video/delorean5.mp4" type="video/mp4" />
+              Dein Browser unterstützt das Video-Element leider nicht.
+            </video>
+          </div>
+          <div>
+            <video
+              class="produktvideo w-full h-auto rounded-lg shadow-lg"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+            >
+              <source src="/public/video/delorean3.mp4" type="video/mp4" />
+              Dein Browser unterstützt das Video-Element leider nicht.
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-6xl mx-auto px-4 pb-12">
         <div class="filter-bar">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
             <div class="flex flex-wrap gap-2">
-            <button class="filter-btn category-filter" data-category="All">Alle</button>
-            <button class="filter-btn category-filter" data-category="Performance-Tuning">Performance-Tuning</button>
-            <button class="filter-btn category-filter" data-category="Body &Wrap">Body & Wrap</button>
-            <button class="filter-btn category-filter" data-category="Custom Build">Custom Build</button>
+              <button class="filter-btn category-filter" data-category="All">
+                Alle
+              </button>
+              <button
+                class="filter-btn category-filter"
+                data-category="Performance-Tuning"
+              >
+                Performance-Tuning
+              </button>
+              <button
+                class="filter-btn category-filter"
+                data-category="Body &Wrap"
+              >
+                Body & Wrap
+              </button>
+              <button
+                class="filter-btn category-filter"
+                data-category="Custom Build"
+              >
+                Custom Build
+              </button>
             </div>
           </div>
         </div>
-        <div id="products">
-          <div>
-            <h3>Sport-Luftfilter</h3>
-            <p>Mehr Luft. Mehr Leistung.</p>
-            <span>50€</span>
-            <button data-id="1" class="btn rounded-xl">In den Warenkorb</button>
+
+        <div
+          id="products-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"
+        >
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Sport-Luftfilter</h3>
+              <p>Mehr Luft. Mehr Leistung.</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>50€</span>
+                <button data-id="1" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Sportauspuff</h3>
-            <p>Mehr Luft. Der Sound den du verdienst</p>
-            <span>300€</span>
-            <button data-id="2" class="btn rounded-xl">In den Warenkorb</button>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Sportauspuff</h3>
+              <p>Mehr Luft. Der Sound den du verdienst</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>300€</span>
+                <button data-id="2" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Chiptuning-Kit</h3>
-            <p>Mehr PS auf Knopfdruck.</p>
-            <span>200€</span>
-            <button data-id="3" class="btn rounded-xl">In den Warenkorb</button>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Chiptuning-Kit</h3>
+              <p>Mehr PS auf Knopfdruck.</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>200€</span>
+                <button data-id="3" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Bodykit</h3>
-            <p>Dein Auto, dein Statement.</p>
-            <span>600€</span>
-            <button data-id="4" class="btn rounded-xl">In den Warenkorb</button>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Bodykit</h3>
+              <p>Dein Auto, dein Statement.</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>600€</span>
+                <button data-id="4" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Carbon-Heckspoiler</h3>
-            <p>Aero trifft Style.</p>
-            <span>190€</span>
-            <button data-id="5" class="btn rounded-xl">In den Warenkorb</button>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Carbon-Heckspoiler</h3>
+              <p>Aero trifft Style.</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>190€</span>
+                <button data-id="5" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Folie (pro Meter)</h3>
-            <p>Farbe wechseln, Charakter behalten.</p>
-            <span>30€</span>
-            <button data-id="6" class="btn rounded-xl">In den Warenkorb</button>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Folie (pro Meter)</h3>
+              <p>Farbe wechseln, Charakter behalten.</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>30€</span>
+                <button data-id="6" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Sport-Federn</h3>
-            <p>Tiefer. Schärfer. Besser.</p>
-            <span>150€</span>
-            <button data-id="7" class="btn rounded-xl">In den Warenkorb</button>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Sport-Federn</h3>
+              <p>Tiefer. Schärfer. Besser.</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>150€</span>
+                <button data-id="7" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Alufelgen (Satz)</h3>
-            <p>Dreh dich um die richtige Achse.</p>
-            <span>800€</span>
-            <button data-id="8" class="btn rounded-xl">In den Warenkorb</button>
-            <div>
-              <h3>Sport-Lenkrad</h3>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Alufelgen (Satz)</h3>
+              <p>Dreh dich um die richtige Achse.</p>
+              <div class="mt-2 flex items-center justify-between">
+                <span>800€</span>
+                <button data-id="8" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Sport-Lenkrad</h3>
               <p>Grip wo es drauf ankommt.</p>
-              <span>130€</span>
-              <button data-id="9" class="btn rounded-xl">In den Warenkorb</button>
+              <div class="mt-2 flex items-center justify-between">
+                <span>130€</span>
+                <button data-id="9" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
             </div>
-            <div>
-              <h3>Schalensitz</h3>
+          </div>
+          <div class="card bg-white shadow rounded-2xl">
+            <div class="card-body p-4">
+              <h3 class="font-semibold">Schalensitz</h3>
               <p>Sitz fest. Fahr hart.</p>
-              <span>350€</span>
-              <button data-id="10" class="btn rounded-xl">In den Warenkorb</button>
+              <div class="mt-2 flex items-center justify-between">
+                <span>350€</span>
+                <button data-id="10" class="btn rounded-xl">
+                  In den Warenkorb
+                </button>
+              </div>
             </div>
           </div>
-          <div id="cart">
-            <h2>Warenkorb</h2>
-            <ul id="cart-items"></ul>
-            <p>Gesamt: <strong id="total">0.00</strong> €</p>
-          </div>
-     </section>
+        </div>
+        <div id="cart">
+          <h2>Warenkorb</h2>
+          <ul id="cart-items"></ul>
+          <p>Gesamt: <strong id="total">0.00</strong> €</p>
+        </div>
+      </section>
     </main>
     <footer class="bg-[#090909] text-white">
-      <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-        <h3 class="uppercase text-lg font-bold">Los <span class="text-[#898989]">|</span> Pistones <span class="text-[#898989]">|</span> Customs</h3>
-        <p class="mt-3 text-white/70">Performance. Precision. Passion.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">Links</h4>
-        <ul class="mt-3 space-y-2 text-white/70">
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-          <li><a href="#about">Über Uns</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold">Newsletter</h4>
-        <div class="mt-3 flex gap-2">
-          <input id="newsletter-input" placeholder="E-Mail" class="bg-white text-black"/>
-          <button id="newsletter-btn" class="btn rounded-xl">Go</button>
+      <div
+        class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <div>
+          <h3 class="uppercase text-lg font-bold">
+            Los <span class="text-[#898989]">|</span> Pistones
+            <span class="text-[#898989]">|</span> Customs
+          </h3>
+          <p class="mt-3 text-white/70">Performance. Precision. Passion.</p>
         </div>
-        <p class="mt-2 text-xs text-white/60">Kein Spam. Nur Drops, heiße Schlitten & Deals.</p>
+        <div>
+          <h4 class="font-semibold">Links</h4>
+          <ul class="mt-3 space-y-2 text-white/70">
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#about">Über Uns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Newsletter</h4>
+          <div class="mt-3 flex gap-2">
+            <input
+              id="newsletter-input"
+              placeholder="E-Mail"
+              class="bg-white text-black"
+            />
+            <button id="newsletter-btn" class="btn rounded-xl">Go</button>
+          </div>
+          <p class="mt-2 text-xs text-white/60">
+            Kein Spam. Nur Drops, heiße Schlitten & Deals.
+          </p>
+        </div>
       </div>
+      <div
+        class="border-t border-white/10 text-center py-4 text-xs text-white/60"
+      >
+        © LOS PISTONES CUSTOMS
       </div>
-      <div class="border-t border-white/10 text-center py-4 text-xs text-white/60">© LOS PISTONES CUSTOMS</div>
     </footer>
   </body>
 </html>
