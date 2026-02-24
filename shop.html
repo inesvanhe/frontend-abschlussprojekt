@@ -11,22 +11,20 @@
       <div>
         <div class="flex justify-center">
           <img
-            class="h-120 w-auto"
+            class="h-80 w-auto"
             src="/img/LPC-Logo2.jpg"
             alt="Los Pistones Customs-Logo"
           />
         </div>
-        <div>
-          <nav
-            class="text-black flex justify-center gap-14 py-4 border-b border-black/10 bg-white sticky"
-          >
-            <a href="/index.html">Startseite</a>
-            <a href="/services.html">Services & Preise</a>
-            <a href="/shop.html">Teile-Shop</a>
-            <a href="#about">Über Uns</a>
-            <a href="#contact">Kontakt & Terminvereinbarung</a>
-          </nav>
-        </div>
+        <nav
+          class="text-black flex justify-center gap-14 py-4 border-b border-black/10 bg-white sticky"
+        >
+          <a href="/index.html">Startseite</a>
+          <a href="/services.html">Services & Preise</a>
+          <a href="/shop.html">Teile-Shop</a>
+          <a href="#about">Über Uns</a>
+          <a href="#contact">Kontakt & Terminvereinbarung</a>
+        </nav>
       </div>
     </header>
     <main>
@@ -45,7 +43,7 @@
               loop=""
               playsinline=""
             >
-              <source src="/public/video/delorean4.mp4" type="video/mp4" />
+              <source src="/video/delorean4.mp4" type="video/mp4" />
               Dein Browser unterstützt das Video-Element leider nicht.
             </video>
           </div>
@@ -57,7 +55,7 @@
               loop=""
               playsinline=""
             >
-              <source src="/public/video/delorean5.mp4" type="video/mp4" />
+              <source src="/video/delorean5.mp4" type="video/mp4" />
               Dein Browser unterstützt das Video-Element leider nicht.
             </video>
           </div>
@@ -69,7 +67,7 @@
               loop=""
               playsinline=""
             >
-              <source src="/public/video/delorean3.mp4" type="video/mp4" />
+              <source src="/video/delorean3.mp4" type="video/mp4" />
               Dein Browser unterstützt das Video-Element leider nicht.
             </video>
           </div>
@@ -270,10 +268,15 @@
             </div>
           </div>
         </div>
-        <div id="cart">
-          <h2>Warenkorb</h2>
+        <div
+          id="cart"
+          class="max-w-xl mx-auto px-4 pb-10 shadow rounded-xl mt-10 text-center"
+        >
+          <h2 class="text-xl font-semibold py-2">Warenkorb</h2>
+          <div class="mx-auto mb-2 h-1 w-32 bg-[#30d6bb] rounded"></div>
           <ul id="cart-items"></ul>
-          <p>Gesamt: <strong id="total">0.00 €</strong></p>
+          <div class="mx-auto mt-2 h-1 w-62 bg-[#898989] rounded"></div>
+          <p class="mt-2">Gesamt: <strong id="total">0.00</strong> €</p>
         </div>
       </section>
     </main>
@@ -286,11 +289,13 @@
             Los <span class="text-[#898989]">|</span> Pistones
             <span class="text-[#898989]">|</span> Customs
           </h3>
-          <p class="mt-3 text-white/70">Performance. Precision. Passion.</p>
+          <p class="mt-3 text-white/70 text-sm">
+            Performance. Precision. Passion.
+          </p>
         </div>
         <div>
           <h4 class="font-semibold">Links</h4>
-          <ul class="mt-3 space-y-2 text-white/70">
+          <ul class="mt-3 space-y-2 text-white/70 text-sm">
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="datenschutz.html">Datenschutz</a></li>
             <li><a href="#contact">Kontakt</a></li>
