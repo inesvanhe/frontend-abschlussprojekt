@@ -1,4 +1,4 @@
-export type categorie = "Performance-Tuning" | "Body & Wrap" | "Custom Build";
+export type category = "Performance-Tuning" | "Body & Wrap" | "Custom Build";
 export type unit = "Stück" | "Meter" | "Satz";
 
 export type Product = {

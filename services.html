@@ -18,7 +18,7 @@
         </div>
         <div>
           <nav
-            class="text-xl flex justify-center gap-20 uppercase py-4 bg-[#898989]"
+            class="text-xl text-black flex justify-center gap-14 py-4 border-b border-black/10 bg-white sticky"
           >
             <a href="/index.html">Startseite</a>
             <a href="/services.html">Services & Preise</a>
@@ -37,67 +37,67 @@
             <h3>Chiptuning</h3>
             <p>Mehr Power. Weniger Verbrauch.</p>
             <span>300€</span>
-            <button data-id="1">Auswählen</button>
+            <button data-id="1" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Sportauspuff-Montage</h3>
             <p>Klang der Begeistert.</p>
             <span>200€</span>
-            <button data-id="2">Auswählen</button>
+            <button data-id="2" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Luftfilter-Upgrade</h3>
             <p>Atme tief. Fahr schnell.</p>
             <span>80€</span>
-            <button data-id="3">Auswählen</button>
+            <button data-id="3" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Motortuning</h3>
             <p>Präzision bis ins letzte Detail.</p>
             <span>500€</span>
-            <button data-id="4">Auswählen</button>
+            <button data-id="4" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Fahrwerk-Setup</h3>
             <p>Tiefer. Straffer. Schärfer.</p>
             <span>350€</span>
-            <button data-id="5">Auswählen</button>
+            <button data-id="5" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Vollfolierung</h3>
             <p>Neues Auto, gleicher Motor.</p>
             <span>1000€</span>
-            <button data-id="6">Auswählen</button>
+            <button data-id="6" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Teilfolierung</h3>
             <p>Akzente die auffallen.</p>
             <span>300€</span>
-            <button data-id="7">Auswählen</button>
+            <button data-id="7" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Bodykit-Montage</h3>
             <p>Form trifft Funktion.</p>
             <span>400€</span>
-            <button data-id="8">Auswählen</button>
+            <button data-id="8" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Innenreinigung</h3>
             <p>Sauber wie am ersten Tag.</p>
             <span>100€</span>
-            <button data-id="9">Auswählen</button>
+            <button data-id="9" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Politur & Versiegelung</h3>
             <p>Glanz der bleibt.</p>
             <span>150€</span>
-            <button data-id="10">Auswählen</button>
+            <button data-id="10" class="btn rounded-xl">Auswählen</button>
           </div>
           <div>
             <h3>Keramikbeschichtung</h3>
             <p>Schutz für Jahre.</p>
             <span>400€</span>
-            <button data-id="11">Auswählen</button>
+            <button data-id="11" class="btn rounded-xl">Auswählen</button>
           </div>
         </div>
         <div id="service-summary">
@@ -115,7 +115,7 @@
             placeholder="Fahrzeugmarke und Modell"
           />
           <input type="date" id="date" placeholder="Wunschtermin" />
-          <button id="submit">Termin anfragen</button>
+          <button id="submit" class="btn rounded-xl">Termin anfragen</button>
         </div>
         <div id="confirmation" class="hidden">
           <h2>Terminanfrage erfolgreich</h2>
@@ -123,29 +123,46 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <h3 class="uppercase">Los Pistones Customs</h3>
-        <p>Performance. Precision. Passion.</p>
-      </div>
-      <div>
-        <h4>Links</h4>
-        <ul>
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-          <li><a href="#about">Über Uns</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Newsletter</h4>
+    <footer class="bg-[#090909] text-white">
+      <div
+        class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
         <div>
-          <input id="newsletter-input" placeholder="E-Mail" />
-          <button id="newsletter-btn">Go</button>
+          <h3 class="uppercase text-lg font-bold">
+            Los <span class="text-[#898989]">|</span> Pistones
+            <span class="text-[#898989]">|</span> Customs
+          </h3>
+          <p class="mt-3 text-white/70">Performance. Precision. Passion.</p>
         </div>
-        <p>Kein Spam. Nur Drops, heiße Schlitten & Deals.</p>
+        <div>
+          <h4 class="font-semibold">Links</h4>
+          <ul class="mt-3 space-y-2 text-white/70">
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#about">Über Uns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Newsletter</h4>
+          <div class="mt-3 flex gap-2">
+            <input
+              id="newsletter-input"
+              placeholder="E-Mail"
+              class="bg-white text-black"
+            />
+            <button id="newsletter-btn" class="btn rounded-xl">Go</button>
+          </div>
+          <p class="mt-2 text-xs text-white/60">
+            Kein Spam. Nur Drops, heiße Schlitten & Deals.
+          </p>
+        </div>
       </div>
-      <div>© LOS PISTONES CUSTOMS</div>
+      <div
+        class="border-t border-white/10 text-center py-4 text-xs text-white/60"
+      >
+        © LOS PISTONES CUSTOMS
+      </div>
     </footer>
   </body>
 </html>
