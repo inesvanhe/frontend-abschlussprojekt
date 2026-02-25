@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teile-Shop | LPC</title>
     <script defer type="module" src="/src/main.ts"></script>
-    <script defer type="module" src="/src/shop.ts"></script>
+    <script defer type="module" src="/src/category-filter.ts"></script>
   </head>
   <body>
     <header class="bg-[#090909] text-white">
@@ -18,7 +18,7 @@
           />
         </div>
         <nav
-          class="text-black flex justify-center gap-14 py-4 border-b border-black/10 bg-white sticky"
+          class="text-black flex justify-center gap-14 py-4 border-b border-black/10 bg-white"
         >
           <a href="/index.html">Startseite</a>
           <a href="/services.html">Services & Preise</a>
@@ -31,7 +31,7 @@
     <main>
       <section class="max-w-6xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-bold text-center">Teile-Shop</h1>
-        <div class="mx-auto mt-2 h-1 w-42 bg-[#30d6bb] rounded"></div>
+        <div class="mx-auto mt-4 h-1 w-24 bg-[#30d6bb] rounded"></div>
         <p class="text-center text-gray-600 mt-6">
           Entdecke die LPC-Ersatzteile in Aktion.
         </p>
@@ -120,7 +120,7 @@
               <h3 class="font-semibold">Sport-Luftfilter</h3>
               <p class="text-sm text-gray-600">Mehr Luft. Mehr Leistung.</p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">50€</span>
+                <span class="font-bold">49,99€</span>
                 <button
                   data-id="1"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -140,7 +140,7 @@
                 Mehr Luft. Der Sound den du verdienst
               </p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">300€</span>
+                <span class="font-bold">299,99€</span>
                 <button
                   data-id="2"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -158,7 +158,7 @@
               <h3 class="font-semibold">Chiptuning-Kit</h3>
               <p class="text-sm text-gray-600">Mehr PS auf Knopfdruck.</p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">200€</span>
+                <span class="font-bold">199,99€</span>
                 <button
                   data-id="3"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -176,7 +176,7 @@
               <h3 class="font-semibold">Bodykit</h3>
               <p class="text-sm text-gray-600">Dein Auto, dein Statement.</p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">600€</span>
+                <span class="font-bold">599,99€</span>
                 <button
                   data-id="4"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -194,7 +194,7 @@
               <h3 class="font-semibold">Carbon-Heckspoiler</h3>
               <p class="text-sm text-gray-600">Aero trifft Style.</p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">190€</span>
+                <span class="font-bold">189,99€</span>
                 <button
                   data-id="5"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -214,7 +214,7 @@
                 Farbe wechseln, Charakter behalten.
               </p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">30€</span>
+                <span class="font-bold">29,99€</span>
                 <button
                   data-id="6"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -232,7 +232,7 @@
               <h3 class="font-semibold">Sport-Federn</h3>
               <p class="text-sm text-gray-600">Tiefer. Schärfer. Besser.</p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">150€</span>
+                <span class="font-bold">149,99€</span>
                 <button
                   data-id="7"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -252,7 +252,7 @@
                 Dreh dich um die richtige Achse.
               </p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">800€</span>
+                <span class="font-bold">799,99€</span>
                 <button
                   data-id="8"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -270,7 +270,7 @@
               <h3 class="font-semibold">Sport-Lenkrad</h3>
               <p class="text-sm text-gray-600">Grip wo es drauf ankommt.</p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">130€</span>
+                <span class="font-bold">129,99€</span>
                 <button
                   data-id="9"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -288,7 +288,7 @@
               <h3 class="font-semibold">Schalensitz</h3>
               <p class="text-sm text-gray-600">Sitz fest. Fahr hart.</p>
               <div class="mt-2 flex items-center justify-between">
-                <span class="font-bold">350€</span>
+                <span class="font-bold">349,99€</span>
                 <button
                   data-id="10"
                   class="btn rounded-xl bg-[#30d6bb] hover:bg-[#2bb69e]"
@@ -301,13 +301,15 @@
         </div>
         <div
           id="cart"
-          class="max-w-xl mx-auto px-4 pb-10 shadow rounded-xl mt-10 text-center"
+          class="max-w-3xl mx-auto px-6 pb-10 shadow-lg rounded-xl mt-14 text-center bg-gray-50"
         >
-          <h2 class="text-xl font-semibold py-2">Warenkorb</h2>
+          <h2 class="text-xl font-semibold py-4">Warenkorb</h2>
           <div class="mx-auto mb-2 h-1 w-32 bg-[#30d6bb] rounded"></div>
-          <ul id="cart-items"></ul>
+          <ul id="cart-items" class="text-gray-600 mb-2"></ul>
           <div class="mx-auto mt-2 h-1 w-62 bg-[#898989] rounded"></div>
-          <p class="mt-2">Gesamt: <strong id="total">0.00</strong> €</p>
+          <p class="mt-2 mb-4 text-gray-700">
+            Gesamt: <strong id="total">0.00</strong> €
+          </p>
         </div>
       </section>
     </main>
@@ -331,6 +333,7 @@
             <li><a href="datenschutz.html">Datenschutz</a></li>
             <li><a href="#contact">Kontakt</a></li>
             <li><a href="#about">Über Uns</a></li>
+            <li><a href="admin.html">Admin-Bereich</a></li>
           </ul>
         </div>
         <div>

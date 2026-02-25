@@ -54,6 +54,23 @@ if (submitButton) {
       return;
     }
 
+    const order = {
+      id: Date.now(),
+      name,
+      mail,
+      phone,
+      plate,
+      vehicle,
+      date,
+      services: getSelectedServices(),
+      total: getTotalServices(),
+      status: "Offen",
+    };
+
+    const orders = JSON.parse(localStorage.getItem("orders") || "[]");
+    orders.push(order);
+    localStorage.setItem("orders", JSON.stringify(orders));
+
     const confirmation = document.getElementById("confirmation");
     if (confirmation) {
       confirmation.classList.remove("hidden");
